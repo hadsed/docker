@@ -1,0 +1,9 @@
+jupyter:
+    build: .
+    user: root
+    command: jupyter notebook --ip=0.0.0.0
+    ports:
+      - "9999:8888"
+    volumes:
+      - /home/hadsed/notebooks/:/root/notebooks
+      - /data:/root/data
